@@ -123,3 +123,14 @@ STATIC_URL = '/static/'
 
 LOGOUT_REDIRECT_URL = '/'
 LOGIN_REDIRECT_URL = '/'
+
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+# EMAIL_USE_TLS = False 
+EMAIL_USE_SSL = True
+EMAIL_HOST = 'smtp.139.com'
+EMAIL_PORT = 465 
+# SERVER_EMAIL = 'tmac523@163.com'
+EMAIL_HOST_USER = '13922275687@139.com'
+EMAIL_HOST_PASSWORD = 'kxc_2011'
